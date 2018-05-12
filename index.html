@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jensen Family News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script type="text/javascript">
+        const code = ['1', '8', '10'];
+        let attempt = [];
+        function btnClick(number) {
+            attempt.push(number);
+            console.log('attempt', attempt);
+            if (arraysEqual(attempt, code)) {
+                location.href = './success.html';
+            }
+
+        }
+        function reset() {
+            attempt = [];
+        }
+        function arraysEqual(a, b) {
+            if (a === b) return true;
+            if (a == null || b == null) return false;
+            if (a.length != b.length) return false;
+
+            // If you don't care about the order of the elements inside
+            // the array, you should sort both arrays here.
+
+            for (var i = 0; i < a.length; ++i) {
+                if (a[i] !== b[i]) return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="1" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="2" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="3" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="4" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="5" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="6" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="7" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="8" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="9" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="10" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="11" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="12" onclick="btnClick(event.target.value)" />
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="13" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="14" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="15" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="16" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="17" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="18" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+<div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="19" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="20" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="21" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="22" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="23" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="24" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="25" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="26" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="27" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="28" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="29" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="30" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="31" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="32" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="33" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="34" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="35" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="36" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="37" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="38" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-4">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="39" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="40" onclick="btnClick(event.target.value)" />
+            </div>
+            <div class="col-xs-6">
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="41" onclick="btnClick(event.target.value)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
