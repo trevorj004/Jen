@@ -14,7 +14,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
     <script type="text/javascript">
-        const code = ['1', '8', '10'];
+        const code = ['27', '33', '1016'];
+        let attempt = [];
+        function btnClick(number) {
+            attempt.push(number);
+            console.log('attempt', attempt);
+            if (arraysEqual(attempt, code)) {
+                location.href = './Finish.html';
+            }
+
+        }
+        function reset() {
+            attempt = [];
+        }
+        function arraysEqual(a, b) {
+            if (a === b) return true;
+            if (a == null || b == null) return false;
+            if (a.length != b.length) return false;
+
+            // If you don't care about the order of the elements inside
+            // the array, you should sort both arrays here.
+
+            for (var i = 0; i < a.length; ++i) {
+                if (a[i] !== b[i]) return false;
+            }
+            return true;
+        }
+    </script>
+    <script type="text/javascript">
+        const code = ['33', '14', '24'];
         let attempt = [];
         function btnClick(number) {
             attempt.push(number);
