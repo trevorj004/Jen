@@ -14,13 +14,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
     <script type="text/javascript">
-        const code = ['1', '1', '1'];
+        const code1 = ['1', '1', '1'];
+        const code2 = ['2', '2', '2'];
         let attempt = [];
         function btnClick(number) {
             attempt.push(number);
             console.log('attempt', attempt);
-            if (arraysEqual(attempt, code)) {
+            if (arraysEqual(attempt, code1)) {
                 location.href = './Finish.html';
+            }
+            if (arraysEqual(attempt, code2)) {
+                location.href = './success.html';
             }
 
         }
@@ -42,7 +46,7 @@
         }
     </script>
     <script type="text/javascript">
-        const code = ['2', '2', '2'];
+        const code = ['1', '1', '1'];
         let attempt = [];
         function btnClick(number) {
             attempt.push(number);
